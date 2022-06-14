@@ -1,5 +1,5 @@
 
-export function fetchCountries(name){
+export function fetchCountries(name) {
 
   return fetch(`https://restcountries.com/v3.1/name/${name}`)
     .then(response => {
@@ -8,5 +8,4 @@ export function fetchCountries(name){
       }
       return response.json();
     })
-  .catch(error => console.log(error))
 }
